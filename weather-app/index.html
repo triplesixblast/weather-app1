@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <script type="module" src="./src/scripts/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+</head>
+<body background="./src/media/background.jpg">
+    <main class="main-container">
+        
+        <header class="input-container">
+            <input type="text" class="city-input" placeholder="Search city">
+            <button class="search-btn">
+                <img src="./src/media/icons/search.svg">
+            </button>
+        </header>
+
+        <section class="weather-info" style="display: none;">
+            <div class="locaton-date-container">
+                <div class="location">
+                    <img src="./src/media/icons/globe_location.svg" alt="">
+                    <h4 class="country-txt"></h4>
+                </div>
+                <h5 class="current-date-txt regural-txt"></h5>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="./src/media/weather/clouds.svg" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt"></h1>
+                    <h3 class="condition-txt regural-txt"></h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <img src="./src/media/icons/water_drop.svg">
+                    <div class="condition-info">
+                        <h5 class="regulat-txt">Humidity</h5>
+                        <h5 class="humidity-value-txt"></h5>
+                    </div>
+                </div>
+
+                <div class="condition-item">
+                    <img src="./src/media/weather/wind.svg">
+                    <div class="condition-info">
+                        <h5 class="regulat-txt">Wind</h5>
+                        <h5 class="wind-value-txt"></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-items-container">
+                
+            </div>
+        </section>
+
+        <section class="search-city section-message">
+            <img src="./src/media/icons/map_search.svg">
+            <div>
+                <h1>Search city</h1>
+                <h4 class="regular-txt">Find out weather conditions of the city</h4>
+            </div>
+        </section>
+
+        <section class="not-found section-message" style="display: none;">
+            <img src="./src/media/icons/block_.svg">
+            <div>
+                <h1>Enter an existing city</h1>
+                <h4 class="regular-txt"></h4>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
